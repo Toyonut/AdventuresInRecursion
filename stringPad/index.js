@@ -1,6 +1,6 @@
 'use strict'
 
-function PadLeft (checkString, requiredLength, padChar = ' ') {
+function padLeft (checkString, requiredLength, padChar = ' ') {
   if (typeof requiredLength !== 'number') {
     throw new TypeError('Length should be a number')
   }
@@ -16,10 +16,10 @@ function PadLeft (checkString, requiredLength, padChar = ' ') {
     return paddedString.slice(trimAmount)
   }
 
-  return PadLeft(paddedString, requiredLength, padChar)
+  return padLeft(paddedString, requiredLength, padChar)
 }
 
-function PadRight (checkString, requiredLength, padChar = ' ') {
+function padRight (checkString, requiredLength, padChar = ' ') {
   if (typeof requiredLength !== 'number') {
     throw new TypeError('Length should be a number')
   }
@@ -35,7 +35,7 @@ function PadRight (checkString, requiredLength, padChar = ' ') {
     return paddedString.slice(0, trimAmount)
   }
 
-  return PadRight(paddedString, requiredLength, padChar)
+  return padRight(paddedString, requiredLength, padChar)
 }
 
-module.exports = { PadLeft, PadRight }
+module.exports = { padLeft, padRight }
