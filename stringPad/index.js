@@ -2,7 +2,7 @@
 
 function padLeft (checkString, requiredLength, padChar = ' ') {
   if (typeof requiredLength !== 'number') {
-    throw new TypeError('Length should be a number')
+    throw new TypeError('Length parameter should be a number')
   }
 
   if (checkString.length >= requiredLength) {
@@ -21,7 +21,7 @@ function padLeft (checkString, requiredLength, padChar = ' ') {
 
 function padRight (checkString, requiredLength, padChar = ' ') {
   if (typeof requiredLength !== 'number') {
-    throw new TypeError('Length should be a number')
+    throw new TypeError('Length parameter should be a number')
   }
 
   if (checkString.length >= requiredLength) {
