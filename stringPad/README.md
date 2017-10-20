@@ -7,13 +7,13 @@ Takes up to 3 parameters.
 3. padChar - Which character to pad with. Defaults to a single space.
 
 ```javascript
-const { PadLeft, PadRight } = require('StringPad')
-const StringPad = require('StringPad')
+const { padLeft, padRight } = require('stringPad')
+const StringPad = require('stringPad')
 
-console.log(StringPad.PadLeft('Foo', 5, 1)) -> '11Foo'
-console.log(StringPad.PadRight('Foo', 5, 1)) -> 'Foo11'
-console.log(PadLeft('bar', 5)) -> '  bar'
-console.log(PadRight('bar', 5)) -> 'bar  '
+console.log(stringPad.padLeft('Foo', 5, 1)) -> '11Foo'
+console.log(stringPad.padRight('Foo', 5, 1)) -> 'Foo11'
+console.log(padLeft('bar', 5)) -> '  bar'
+console.log(padRight('bar', 5)) -> 'bar  '
 
 ```
 
