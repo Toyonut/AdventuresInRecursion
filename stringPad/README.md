@@ -28,7 +28,7 @@ console.log(padRight('bar', 5)) -> 'bar  '
 8. Should return the original length string if it is longer than the required length
 9. Should be a right or left padded string
 
-**Note**
+**Notes**<br>
 The recursive one was fixed by adding a check to the start of the function which returned the unmodified string immediately if the requiredLength was less than the length of our input. This satisfied the condition to return the original string if it is longer than the required length.
 After the pad, but before the recursive function invocation, I added the check to see if the padded string was too long. This allowed me to trim it and return it so the length doesn't go over, but if it is still short, it goes through the function again.
 It does mean I check the length twice, but it works.
