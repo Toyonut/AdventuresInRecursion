@@ -8,7 +8,7 @@ Takes up to 3 parameters.
 
 ```javascript
 const { padLeft, padRight } = require('stringPad')
-const StringPad = require('stringPad')
+const stringPad = require('stringPad')
 
 console.log(stringPad.padLeft('Foo', 5, 1)) -> '11Foo'
 console.log(stringPad.padRight('Foo', 5, 1)) -> 'Foo11'
