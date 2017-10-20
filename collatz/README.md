@@ -24,7 +24,7 @@ The Collatz conjecture is a conjecture in mathematics named after Lothar Collatz
 
 [Relevant XKCD](https://xkcd.com/710/).
 
-This is all done using a recursive function to apply the operations until the output reaches 1. If it hits 1, it returns true. If it goes below 1, it will return an error. <br>
+This is all done using a recursive function to apply the operations until the output reaches 1. If it hits 1, it returns true. If it goes below 1, it will return false or an error if it somehow goes negative. <br>
 If you run it for all positive numbers and it comes out with a false, there might be a prize in mathematics for you. Although, you might need to refactor to use a JS long library.
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
