@@ -17,3 +17,4 @@ console.log(factorial(5)) -> 120
 **Notes**<br>
 I tried this counting up from 1 until the input number, but found I needed an extra parameter to track the state of things and it got more complex. Counting down and tracking
 It multiplies the previous number by the curent round so 5 * 4 -> 20 * 3 -> 60 * 2 -> 120 * 1 and return at 1.
+Apparently you are able to calculate factorials of floats, not just ints, but the maths got a bit complex for now. Maybe something for another day when I have spare brainpower to devote to it.
