@@ -10,6 +10,8 @@ function factorial (fact, rounds = fact) {
     return fact
   } else {
     rounds -= 1
+    // multiply the previous number by the curent round
+    // 5 * 4 -> 20 * 3 -> 60 * 2 -> 120 * 1 and return at 1
     return factorial((fact * rounds), rounds)
   }
 }
