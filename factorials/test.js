@@ -18,5 +18,6 @@ describe('factorial', () => {
     expect(factorial(4)).to.equal(24)
     expect(factorial(5)).to.equal(120)
     expect(factorial(10)).to.equal(3628800)
+    expect(factorial(24)).to.equal(620448401733239439360000)
   })
 })
