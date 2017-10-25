@@ -1,12 +1,15 @@
 function factorial (fact, rounds = fact) {
-  if (fact < 1 || typeof fact !== 'number') {
+  if (fact < 0 || typeof fact !== 'number') {
     throw new Error('Factorial needs to be a positive number greater than 1.')
   }
 
   // We only like whole numbers here.
   fact = Math.floor(fact)
 
-  if (rounds === 1) {
+  if (rounds === 0) {
+    // maths edge case https://www.mathsisfun.com/numbers/factorial.html.
+    return 1
+  } else if (rounds === 1) {
     return fact
   } else {
     rounds -= 1
